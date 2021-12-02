@@ -2,17 +2,17 @@
 
 | Capitolo precedente                                                                                                                                          | Capitolo successivo                                                                           |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------: |
-| [◀︎ 01-classificatore-come-funziona](../01-classificatore-come-funziona)  | [03-crea-rete▶︎](../03-crea-rete) |
+| [◀︎ 01-classificatore-come-funziona](../01-classificatore-come-funziona)  | [03-crea-rete ▶︎](../03-crea-rete) |
 
 ## Obiettivo
 
 Crea un dataset di immagini su cui addestrare la rete neurale.
 
-Stiamo provando a generare una rete neurale in grado di distinguere tra immagini di gattini e immagini di cagnolini. Affinché la rete *impari* la differenza tra le due categorie, dobbiamo raccogliere un bel numero di immagini di gattini e cagnolini da poter dare in pasto alla rete. Più una rete è complessa, più avrà bisogno di un gran numero di dati (immagini in questo caso).
+Stiamo provando a generare una rete neurale in grado di distinguere tra immagini di gattini e immagini di cagnolini. Affinché la rete ***impari*** la differenza tra le due categorie, dobbiamo raccogliere un bel numero di immagini di gattini e cagnolini da poter dare in pasto alla rete. Più una rete è complessa, più avrà bisogno di un gran numero di dati (immagini in questo caso).
 
 Non è finita qui, ogni immagine avrà bisogno di una corrispondente "etichetta" che indichi la categoria dell'immagine (ovvero se contiene gattini oppure cagnolini). Questa è la parte più faticosa del creare nuovi dataset: le etichette devono essere corrette al 100% (in caso contrario, una rete non imparerebbe nulla!). Per questo, solitamente le etichette non vengono generate in modo automatico da un software, ma da un essere umano che le verifica una per una...
 
-Per fortuna che sul web è disponibile una gran quantità di dataset già pronti! Adesso ne andremo a scaricare uno.
+Per fortuna che sul web è disponibile una gran quantità di dataset già pronti! Adesso ne andiamo a scaricare uno.
 
 ## Steps
 
@@ -20,7 +20,7 @@ Per fortuna che sul web è disponibile una gran quantità di dataset già pronti
 
 Su Google Colab, crea una nuova cella di codice e inserisci il seguente comando per scaricare lo zip contenente il dataset. In un notebook python, le istruzioni che iniziano per `!` vengono interpretate come comandi da eseguire su terminale.
 
-``` py
+```
 !wget --no-check-certificate \
     https://storage.googleapis.com/mledu-datasets/cats_and_dogs_filtered.zip \
     -O /tmp/cats_and_dogs_filtered.zip
@@ -78,7 +78,7 @@ Dovresti avere in totale 1500 immagini di gattini 🐱 e 1500 immagini di cagnol
 
 #### 4. Dai un'ultima sistemata al dataset
 
-Prima di essere dato in pasto alla rete, può essere comodo utilizzare un *generatore* per leggere automaticamente durante l'addestramento tutte le immagini del dataset. Il generatore è utile anche per rendere le immagini tutte della stessa dimensione e per normalizzare i valori dei pixel (ovvero spostare i valori dal range [0-255] al range [0-1]), cosa che semplifica la vita alla rete.
+Prima di essere dato in pasto alla rete, può essere comodo utilizzare un ***generatore*** per leggere automaticamente durante l'addestramento tutte le immagini del dataset. Il generatore è utile anche per rendere le immagini tutte della stessa dimensione e per normalizzare i valori dei pixel (ovvero spostare i valori dal range [0-255] al range [0-1]), cosa che semplifica la vita alla rete.
 
 - Crea due generatori (uno per training, uno per validation), e ridimensiona le immagini a 150x150 pixel:
 
@@ -133,8 +133,8 @@ plt.show()
 
 Otterrai un risultato simile a questo:
  
-<kbd>![](../assets/02-grid.png)</kbd>
+<kbd>![grid](../assets/02-grid.png)</kbd>
 
 | Capitolo precedente                                                                                                                                          | Capitolo successivo                                                                           |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------: |
-| [◀︎ 01-classificatore-come-funziona](../01-classificatore-come-funziona)  | [03-crea-rete▶︎](../03-crea-rete) |
+| [◀︎ 01-classificatore-come-funziona](../01-classificatore-come-funziona)  | [03-crea-rete ▶︎](../03-crea-rete) |
