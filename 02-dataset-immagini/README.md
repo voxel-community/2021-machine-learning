@@ -16,7 +16,7 @@ Per fortuna che sul web è disponibile una gran quantità di dataset già pronti
 
 ## Steps
 
-#### 1. Download
+### 1. Download
 
 Su Google Colab, crea una nuova cella di codice e inserisci il seguente comando per scaricare lo zip contenente il dataset. In un notebook python, le istruzioni che iniziano per `!` vengono interpretate come comandi da eseguire su terminale.
 
@@ -26,7 +26,7 @@ Su Google Colab, crea una nuova cella di codice e inserisci il seguente comando 
     -O /tmp/cats_and_dogs_filtered.zip
 ```
 
-#### 2. Estrai le immagini
+### 2. Estrai le immagini
 
 Estrai il contenuto del file .zip appena scaricato, con il seguente codice.
 
@@ -39,7 +39,7 @@ zip_ref.extractall('/tmp')
 zip_ref.close()
 ```
 
-#### 3. Separa il dataset
+### 3. Separa il dataset
 
 Solitamente, i dataset si organizzano in due parti: una parte chiamata *training set* e una chiamata *validation set* (o anche *test set*).
 Durante la fase di addestramento (=training), mostreremo alla rete la maggiorparte delle immagini, ma non tutte. Terremo da parte un piccolo numero di immagini da usare come test, per verificare quanto la rete abbia imparato.
@@ -48,10 +48,10 @@ Esempio: se nel dataset abbiamo 100 immagini diverse di labrador, durante l'adde
 
 Il dataset che abbiamo scaricato, è già comodamente suddiviso in training set e validation set.
 
-- Verifica quante immagini ci sono nelle due parti del dataset con questo codice: 
+- Verifica quante immagini ci sono nelle due parti del dataset con questo codice:
 
 ```py
-import os		# modulo di python per interfacciarsi col sistema operativo
+import os       # modulo di python per interfacciarsi col sistema operativo
 
 base_dir            = '/tmp/cats_and_dogs_filtered'
 train_dir           = os.path.join(base_dir, 'train')
@@ -76,7 +76,7 @@ print('Immagini di cagnolini nel validation set:', len(os.listdir(validation_dog
 
 Dovresti avere in totale 1500 immagini di gattini 🐱 e 1500 immagini di cagnolini 🐶 .
 
-#### 4. Dai un'ultima sistemata al dataset
+### 4. Dai un'ultima sistemata al dataset
 
 Prima di essere dato in pasto alla rete, può essere comodo utilizzare un ***generatore*** per leggere automaticamente durante l'addestramento tutte le immagini del dataset. Il generatore è utile anche per rendere le immagini tutte della stessa dimensione e per normalizzare i valori dei pixel (ovvero spostare i valori dal range [0-255] al range [0-1]), cosa che semplifica la vita alla rete.
 
@@ -101,7 +101,7 @@ validation_generator = val_datagen.flow_from_directory(
         class_mode='binary')
 ```
 
-#### 5. Visualizza le immagini
+### 5. Visualizza le immagini
 
 Adesso che il dataset è pronto, siamo curiose di scoprire che immagini contiene! Per visualizzare le immagini, usiamo il modulo di python chiamato `matplotlib`, molto usato anche per generare grafici e quant'altro. Con il codice seguente, visualizziamo una griglia di 4x4 immagini del training set, dove le prime due righe contengono gattini e le ultime due cagnolini.
 
@@ -132,7 +132,7 @@ plt.show()
 ```
 
 Otterrai un risultato simile a questo:
- 
+
 <kbd>![grid](../assets/02-grid.png)</kbd>
 
 | Capitolo precedente                                                                                                                                          | Capitolo successivo                                                                           |
