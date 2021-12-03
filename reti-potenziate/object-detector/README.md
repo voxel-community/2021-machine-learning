@@ -84,9 +84,9 @@ Stavolta la rete ha individuato molti più oggetti nell'immagine! Possiamo veder
 
 ### 3. Testa la rete su video
 
-Proviamo cosa succede se a YOLO diamo in pasto un video! Come esempio, ho preso una clip sempre dal trailer di *House of Gucci*.
+Proviamo cosa succede se a YOLO diamo in pasto un video! Come esempio, ho preso una clip sempre dal trailer di *House of Gucci*. Trovi il file da scaricare nella cartella `assets` di questa repository.
 
-<kbd>![gucci3](../../assets/06-gucci3.mp4)</kbd>
+<kbd>![gucci3](../../assets/06-gucci3.gif)</kbd>
 
 > Se vuoi provare con un tuo video, attenzione a non caricare file troppo grandi, altrimenti dovrai aspettare un bel po' per ottenere il risultato! Considera che un video di 3MB richiede un paio di minuti di calcolo.
 
@@ -98,6 +98,8 @@ Proviamo cosa succede se a YOLO diamo in pasto un video! Come esempio, ho preso 
 object_detect( "gucci.mp4", "result" )
 ```
 
+Vedrai come la rete stamperà ad ogni frame del video che classi di oggetti individua.
+
 Prima di visualizzare il risultato, è necessario convertire il file da `.mp4` a `.webm`:
 
 ```py
@@ -105,7 +107,7 @@ Prima di visualizzare il risultato, è necessario convertire il file da `.mp4` a
 !ffmpeg -i 'result/gucci.mp4' -vcodec vp9 result/gucci.webm
 ```
 
-- Infine, visualizza il risultato!
+- Infine, vediamo il risultato!
 
 ```py
 with  io.open('result/gucci.webm','r+b') as f:
@@ -116,7 +118,7 @@ HTML("""<video width=800 controls><source src="%s" type="video/webm"></video>"""
 
 Come vedi, i riquadri attorno agli oggetti seguono i movimenti del loro contenuto, niente male!
 
-<kbd>![gucci4](../../assets/06-gucci4.webm)</kbd>
+<kbd>![gucci4](../../assets/06-gucci4.gif)</kbd>
 
 Adesso divertiti a provare tu con altri video o immagini ✨
 
