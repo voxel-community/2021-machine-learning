@@ -2,7 +2,7 @@
 
 | Capitolo precedente                                                                                                                                          | Capitolo successivo                                                                           |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------: |
-| [◀︎ reti-potenziate/object-detector ](../object-detector)  | [torna-inizio ▶︎](../../) |
+| [◀︎ reti-potenziate/object-detector ](../object-detector)  | [torna-inizio ▶︎](../../../..) |
 
 ## Obiettivo
 
@@ -162,4 +162,4 @@ Divertiti a provare le combinazioni più belle! ✨
 
 | Capitolo precedente                                                                                                                                          | Capitolo successivo                                                                           |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------: |
-| [◀︎ reti-potenziate/object-detector ](../object-detector)  | [torna-inizio ▶︎](../../) |
+| [◀︎ reti-potenziate/object-detector ](../object-detector)  | [torna-inizio ▶︎](../../../..) |

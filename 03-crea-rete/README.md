@@ -56,7 +56,7 @@ x = layers.Dense(512, activation='relu')(x)
 
 ### 3. Layer di output
 
-L'ultimo strato della nostra rete ha il compito di produrre l'output, ovvero il risultato. Nel nostro caso, il risultato deve essere un valore che rappresenta la presenza di gattini o di cagnolini. La soluzione più semplice è avere il layer che restituisce un singolo numero (ovvero un solo neurone), compreso tra 0 e 1: se il numero è vicino a 0, indichiamo i gattini 🐈; se è vicino a 1, abbiamo dei cagnolini 🐕.
+L'ultimo strato della nostra rete ha il compito di produrre l'output, ovvero il risultato. Nel nostro caso, il risultato deve essere un valore che rappresenta la presenza di gattini o di cagnolini. La soluzione più semplice è avere il layer che restituisce un singolo numero (ovvero un solo neurone), compreso tra 0 e 1: se il numero è vicino a 0 indichiamo i gattini 🐈, se è vicino a 1 abbiamo dei cagnolini 🐕.
 
 - Crea il layer di output con un solo neurone:
 
