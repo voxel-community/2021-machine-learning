@@ -8,10 +8,10 @@ Per questo motive, andremo ad usare delle reti già pronte ed addestrate, che si
 
 Quelli che vogliamo proporti sono:
 
-- la super-detective 🕵️‍♀️ - una rete che identifica oggetti in una scena, sia immagine che video: [Rete Object Detector](../reti-potenziate/sobject-detector)
-- l'artista 👩‍🎨 - una rete che data una foto e un quadro di un artista, trasferisce lo stile del quadro sulla foto: [Rete Style Transfer](../reti-potenziate/style-transfer)
+- **La Super-Detective 🕵️‍♀️** una rete che identifica oggetti in una scena, sia immagine che video: [Rete Object Detector](../reti-potenziate/object-detector)
+- **L'Artista 👩‍🎨** - una rete che data una foto e un quadro di un artista, trasferisce lo stile del quadro sulla foto: [Rete Style Transfer](../reti-potenziate/style-transfer)
 
 
 | Capitolo precedente                                                                                                                                          | Capitolo successivo                                                                           |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------: |
-| [◀︎ 04-addestra-rete ](../../04-addestra-rete )  | [reti-potenziate/object-detector ▶︎](../reti-potenziate/sobject-detector) |
+| [◀︎ 04-addestra-rete ](../04-addestra-rete )  | [reti-potenziate/object-detector ▶︎](../reti-potenziate/object-detector) |

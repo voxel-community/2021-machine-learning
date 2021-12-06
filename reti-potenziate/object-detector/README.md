@@ -126,4 +126,4 @@ Adesso divertiti a provare tu con altri video o immagini ✨
 
 | Capitolo precedente                                                                                                                                          | Capitolo successivo                                                                           |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------: |
-| [◀︎ 05-cosa-ha-imparato ](../../05-cosa-ha-imparato )  | [reti-potenziate/style-transfer ▶︎](../style-transfer) |
+| [◀︎ reti-potenziate ](..)  | [reti-potenziate/style-transfer ▶︎](../style-transfer) |
