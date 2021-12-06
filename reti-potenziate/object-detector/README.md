@@ -67,7 +67,7 @@ Il risultato è l'immagine di partenza con aggiunto un riquadro attorno a Minou.
 
 Proviamo con una immagine con più elementi. L'immagine seguente è presa dal trailer del nuovo film *House of Gucci:*
 
-<kbd>![gucci1](../../assets/06-gucci1.jpg)</kbd>
+<kbd>![gucci1](../../assets/gucci.jpg)</kbd>
 
 - Come sopra, carica il file su Colab.
 - Esegui il comando:
