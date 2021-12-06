@@ -44,6 +44,8 @@ EPOCH   = 8
 - Assegna il learning rate alla rete:
 
 ```py
+from tensorflow.keras.optimizers import RMSprop
+
 model.compile( loss='binary_crossentropy', optimizer=RMSprop( learning_rate=LRATE ), metrics=[ 'acc' ] )
 
 ```
