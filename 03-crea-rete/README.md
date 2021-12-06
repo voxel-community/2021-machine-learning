@@ -21,6 +21,8 @@ In qualsiasi rete, il primo strato viene chiamato *layer di input*. Questo layer
 - Crea il primo layer con questo comando:
 
 ```py
+from tensorflow.keras import layers
+
 layer_input = layers.Input( shape=( 150, 150, 3 ) )
 ```
 
@@ -71,6 +73,8 @@ Adesso che abbiamo definito la forma degli strati della rete, mettiamo tutto ins
 - Crea la rete neurale chiamata `PuppiesKittens`:
 
 ```py
+from tensorflow.keras import Model
+
 model = Model( layer_input, layer_output, name="PuppiesKittens" )
 ```
 
