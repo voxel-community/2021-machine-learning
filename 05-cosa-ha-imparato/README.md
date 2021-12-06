@@ -6,7 +6,7 @@
 
 ## Obiettivo
 
-Verifica se la rete ha imparato a distinguere tra cani e gatti.
+Verificare se la rete ha imparato a distinguere tra cani e gatti.
 
 Terminato l'addestramento, i neuroni della rete avranno "assimilato" in qualche modo l'idea di che aspetto ha un gatto e un cane, e di quali siano le differenze visive tra le due categorie.
 
@@ -19,9 +19,9 @@ Adesso possiamo usare la rete per analizzare nuove immagini e farci dire a quale
 
 Per comodità creiamoci una funzione che ci permetta di testare la risposta della rete su una immagine del nostro dataset. Questa funzione:
 
-- visualizza l'immagine che passi in input,
+- visualizza l'immagine che dai alla rete,
 - da in pasto l'immagine alla rete neurale,
-- stampa la risposta della rete.
+- stampa la risposta.
 
 
 ```py
@@ -81,7 +81,7 @@ Non limitarti alle immagini prese dal dataset! Puoi passare alla rete qualsiase 
 <kbd>![minou](../assets/minou.jpg)</kbd>
 
 - Scarica questa immagine (o scegline una a piacimento).
-- Dentro Colab, clicca sull'icoda della cartella che si trova nella barra a sinistra.
+- Dentro Colab, clicca sull'icona della cartella che si trova nella barra a sinistra.
 
 <kbd>![step1](../assets/05-step1.png)</kbd>
 
@@ -114,4 +114,4 @@ Hai ufficialmente generato la tua prima rete neurale artificiale!! Hai avuto un 
 
 | Capitolo precedente                                                                                                                                          | Capitolo successivo                                                                           |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------: |
-| [◀︎ 04-addestra-rete ](../04-addestra-rete )  | [reti-potenziate/object-detector ▶︎](../reti-potenziate/object-detector) | 
+| [◀︎ 04-addestra-rete ](../04-addestra-rete )  | [reti-potenziate ▶︎](../reti-potenziate/) | 

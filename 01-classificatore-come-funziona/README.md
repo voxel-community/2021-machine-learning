@@ -12,11 +12,11 @@ Con questo esercizio programmeremo da zero una rete neurale che, data un'immagin
 
 Questa tipologia di rete si chiama ***classificatore***, nel senso che deve imparare a distinguere tra "classi" di oggetti. In questo caso abbiamo due classi: la classe gattino 🐱 e la classe cagnolino 🐶.
 
-### Come funziona?
+### Come funziona una rete neurale?
 
-Una rete neurale è una struttura composta da strati (=layer) di "neuroni artificiali" connessi tra di loro.
+Una rete neurale è una struttura composta da strati (***layer***) di "neuroni artificiali" connessi tra di loro.
 
-Quando creiamo una rete, definiamo quanti neuroni deve avere e su quanti strati vanno disposti i neuroni. Appena creata, però, la rete non è in grado di fare nulla in quanto i suoi neuroni non hanno ancora alcun significato.
+Quando creiamo una rete, definiamo quanti neuroni deve avere e su quanti strati vanno disposti i neuroni. Appena creata, però, la rete non è in grado di fare nulla in quanto i suoi neuroni sanno ancora nulla.
 
 Per essere usata, una rete va prima ***addestrata***. L'addestramento di una rete dipende dal tipo di compito che vogliamo essa esegua. Nel nostro caso vogliamo un classificatore di immagini, quindi l'addestramento consisterà nel mostrare alla rete un gran numero di immagini indicandole ogni volta se è presente un cagnolino oppure un gattino.
 
@@ -25,7 +25,15 @@ Per essere usata, una rete va prima ***addestrata***. L'addestramento di una ret
 
 Dopo un periodo di addestramento, avendo visto tanti esempi di cosa è un cagnolino e di cosa è un gattino, i neuroni della rete si saranno attivati in una configurazione particolare. Questa configurazione permette alla rete di apprendere i concetti astratti di *gatto* e *cane*.
 
-Terminato l'addestramento, la rete sarà quindi in grado di analizzare immagini mai viste prima ed riconoscere se ci sono gattini o cagnolini. Proviamo!
+Terminato l'addestramento, la rete sarà quindi in grado di analizzare immagini mai viste prima ed riconoscere se ci sono gattini o cagnolini. 
+
+Per il suo funzionamento completo servono dunque:
+
+* dei dati di partenza su cui fare allenamento
+* una fase di allenamento
+* dei dati usati per controllare l'allenamento
+
+Per cominciare un addestramento, servono una serie di dati da cui partire. Proviamo!
 
 
 | Capitolo precedente                                                                                                                                          | Capitolo successivo                                                                           |

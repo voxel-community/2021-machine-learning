@@ -18,7 +18,7 @@ Per fortuna che sul web è disponibile una gran quantità di dataset già pronti
 
 ### 1. Download
 
-Su Google Colab, crea una nuova cella di codice e inserisci il seguente comando per scaricare lo zip contenente il dataset.
+Su Google Colab, crea una nuova cella di codice (cliccando `+Codice`) e inserisci il seguente comando per scaricare lo zip contenente il dataset.
 
 ```
 !wget --no-check-certificate \
@@ -41,16 +41,17 @@ zip_ref.extractall('/tmp')
 zip_ref.close()
 ```
 
-### 3. Separa il dataset
+### 3. Crea un dataset di allenamento e uno di validazione post-allenamento
 
-Solitamente, i dataset si organizzano in due parti: una parte chiamata *training set* e una chiamata *validation set* (o anche *test set*).
-Durante la fase di addestramento (=training), mostreremo alla rete la maggiorparte delle immagini, ma non tutte. Terremo da parte un piccolo numero di immagini da usare come test, per verificare quanto la rete abbia imparato.
+Solitamente, i dataset si organizzano in due parti:
+* il *training set*, un gruppo di immagini usato nella fase di addestramento
+* il *validation set* (o anche *test set*), un piccolo numero di immagini da usare come test, per verificare quanto la rete abbia imparato.
 
-Esempio: se nel dataset abbiamo 100 immagini diverse di labrador, durante l'addestramento mostriamo alla rete solo 80 di queste. Al termine dell'addestramento, la rete non ha mai visto le rimanenti 20 immagini. Se la rete è in grado di riconoscere correttamente che queste sono anch'esse immagini di cagnolini, avremo la prova che la rete ha imparato a riconoscere i cani!
+> Esempio: se nel dataset abbiamo 100 immagini diverse di labrador, durante l'addestramento mostriamo alla rete solo 80 di queste. Al termine dell'addestramento, la rete non ha mai visto le rimanenti 20 immagini. Se la rete è in grado di riconoscere correttamente che queste sono anch'esse immagini di cagnolini, avremo la prova che la rete ha imparato a riconoscere i cani!
 
 Il dataset che abbiamo scaricato, è già comodamente suddiviso in training set e validation set.
 
-- Verifica quante immagini ci sono nelle due parti del dataset con questo codice:
+Per verificare quante immagini ci sono nelle due parti del dataset, usa questo codice:
 
 ```py
 import os       # modulo di python per interfacciarsi col sistema operativo
@@ -78,11 +79,13 @@ print('Immagini di cagnolini nel validation set:', len(os.listdir(validation_dog
 
 Dovresti avere in totale 1500 immagini di gattini 🐱 e 1500 immagini di cagnolini 🐶 .
 
-### 4. Dai un'ultima sistemata al dataset
+### 4. Rendi il dataset più comodo da utilizzare
 
-Prima di passare il dataset alla rete, può essere comodo utilizzare un ***generatore*** per leggere automaticamente durante l'addestramento tutte le immagini del dataset. Il generatore è utile anche per uniformare la dimensione delle immagini e per normalizzare i valori dei pixel (ovvero spostare i valori dal range [0-255] al range [0-1]), cosa che semplifica la vita alla rete.
+Prima di passare il dataset alla rete, può essere comodo utilizzare un ***generatore*** per leggere automaticamente durante l'addestramento tutte le immagini del dataset. 
 
-- Crea due generatori (uno per training, uno per validation), e ridimensiona le immagini a 150x150 pixel:
+Il generatore è utile anche per rendere le dimensioni delle immagini tutte uguali, cosa che semplifica la vita alla rete.
+
+Crea due generatori (uno per training, uno per validation), e ridimensiona le immagini a 150x150 pixel:
 
 ```py
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
@@ -103,11 +106,15 @@ validation_generator = val_datagen.flow_from_directory(
         class_mode='binary')
 ```
 
-### 5. Visualizza le immagini
+### 5. Visualizza le immagini del dataset
 
-Adesso che il dataset è pronto, siamo curiose di scoprire che immagini contiene! Per visualizzare le immagini, usiamo il modulo di python chiamato `matplotlib`, molto popolare per generare grafici e quant'altro. Con il codice seguente, visualizziamo una griglia di 4x4 immagini del training set, dove le prime due righe contengono gattini e le ultime due cagnolini.
+Adesso che il dataset è pronto, siamo curiose di scoprire che immagini contiene! 
 
-- Per estrarre immagini diverse dal dataset, cambia il valore della variabile `index`, in un range tra 0 e 992:
+Per visualizzare le immagini, usiamo il modulo di python chiamato `matplotlib`, molto popolare per generare grafici e quant'altro. 
+
+Con il codice seguente, visualizziamo una griglia di 4x4 immagini del training set, dove le prime due righe contengono gattini e le ultime due cagnolini.
+
+Per estrarre immagini diverse dal dataset, cambia il valore della variabile `index`, in un range tra 0 e 992:
 
 ```py
 %matplotlib inline

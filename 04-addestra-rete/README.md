@@ -6,31 +6,38 @@
 
 ## Obiettivo
 
-Addestra la rete neurale per imparare la differenza tra cani e gatti.
+Addestrare la rete neurale per imparare la differenza tra cani e gatti.
 
-È tempo di far imparare qualcosa alla nostra rete! Abbiamo creato la sua struttura e l'abbiamo rempita di neuroni. Ma i suoi neuroni sono ancora "vuoti". Affinché i neuroni si attivino e si connettano insieme per imparare, è necessiario ***addestrare*** la rete.
+È tempo di far imparare qualcosa alla nostra rete! Abbiamo creato la sua struttura e l'abbiamo rempita di neuroni. Ma i suoi neuroni sono ancora "vuoti". Affinché i neuroni si attivino e si connettano insieme per imparare, è necessario ***addestrare*** la rete.
 
-L'addestramento (=training) consiste nel mostrare alla rete una immagine alla volta dicendole in qualche modo che "in questa immagine c'è un gattino" oppure "qui c'è un cagnolino". Le immagini le prenderemo dal nostro dataset che abbiamo già organizzato in due *generatori*.
+L'addestramento (***training***) consiste nel mostrare alla rete una immagine alla volta dicendole in qualche modo che "in questa immagine c'è un gattino" oppure "qui c'è un cagnolino". Le immagini le prenderemo dal nostro dataset che abbiamo già organizzato in due *generatori*.
 
 
 ## Steps
 
-### 1. Imposta i parametri per l'addestramento
+### 1. Imposta velocità e durata dell'addestramento
 
 Il training di una rete comporta regolare diversi parametri. Ce ne sono due in particolare a cui devi prestare attenzione:
+- a che velocità vuoi che la rete impari (learning rate),
+- per quanto tempo (epoche),
 
-1. Il ***learning rate*** rappresenta il ritmo con cui la rete impara cose nuove. Se questo valore è troppo basso, la rete impiega tantissimo tempo ad apprendere. Tuttavia, se il numero è troppo alto, la rete potrebbe confodersi e al primo errore perderebbe quello che ha imparato fino a quel momento.
+1. Il ***learning rate*** rappresenta il ritmo con cui la rete impara cose nuove. 
 
-2. Il numero di ***epoche*** rappresenta la durata dell'addestramento. Una epoca equivale ad aver visto tutte le immagini del dataset una volta sola. Eseguire più epoche, quindi, si traduce nel far vedere alla rete più volte le stesse immagini. Questo aiuta la rete a rafforzare quello che ha imparato. Tuttavia, se il numero di epoche è eccessivo, la rete potrebbe "aver imparato a memoria" tutte le immagini, e non essere più in grado di riconoscere immagini nuove che non appartengono al training set.
+      Se questo valore è troppo basso, la rete impiega tantissimo tempo ad apprendere. 
+      Tuttavia, se il numero è troppo alto, la rete potrebbe confodersi e al primo errore perderebbe quello che ha imparato fino a quel momento.
 
-Anche in questo caso è dunque importante trovare una via di mezzo. Nel nostro caso useremo un learning rate uguale a 0.001, e faremo durare l'addestramento per 8 epoche:
+2. Il numero di ***epoche*** rappresenta la durata dell'addestramento. Una epoca equivale ad aver visto tutte le immagini del dataset una volta sola. Eseguire più epoche, quindi, si traduce nel far vedere alla rete più volte le stesse immagini. Questo aiuta la rete a rafforzare quello che ha imparato. Tuttavia, **se il numero di epoche è eccessivo, la rete potrebbe "aver imparato a memoria" tutte le immagini, e non essere più in grado di riconoscere immagini nuove che non appartengono al training set**.
+
+Anche in questo caso è dunque importante trovare una via di mezzo. Nel nostro caso useremo una velocità di apprendimento (***learning rate***) uguale a 0.001, e faremo durare l'addestramento per 8 epoche.
+
+Copia il comando in un nuovo blocco di codice
 
 ```py
 LRATE   = 0.001
 EPOCH   = 8
 ```
 
-### 2. Addestra la rete!
+### 2. Fai partire l'allenamento!
 
 È tutto pronto per addestrare la nostra rete!
 
