@@ -22,7 +22,7 @@ Poi faremo uso di:
 Nella schermata del block notes puoi vedere un box con un pulsante `play` accanto: questo è un blocco di codice. Qui inseriremo i vari pezzi di codice con cui far funzionare l'intelligenza artificiale. 
 Per farli partire e provarli, basta schiacciare il pulsante play.
 
-![Status](../assets/00-code-block.png)
+![Status](../assets/00-empty-code-block.png)
 
 Per ora, elimina quello di default. Per farlo, vai sopra al box con il mouse - a destra compariranno delle icone piccole. Clicca quella del cestino.
 
