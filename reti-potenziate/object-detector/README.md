@@ -56,7 +56,7 @@ def object_detect( nome_file, nome_cartella ):
 Usiamo nuovamente la foto di Minou come primo test.
 
 - Come fatto prima, carica il file della immagine nel workspace virtuale del tuo notebook.
-- Esegui il comando:
+- Esegui il comando in un **nuovo blocco di codice**:
 
 ```py
 object_detect( "minou.jpg", "result" )
@@ -72,7 +72,7 @@ Proviamo con una immagine con più elementi. L'immagine seguente è presa dal tr
 <kbd>![gucci1](../../assets/gucci.jpg)</kbd>
 
 - Come sopra, carica il file su Colab.
-- Esegui il comando:
+- Esegui il comando in un **nuovo blocco di codice**:
 
 ```py
 object_detect( "gucci.jpg", "result" )
@@ -93,7 +93,7 @@ Proviamo cosa succede se a YOLO diamo in pasto un video! Come esempio, ho preso 
 > Se vuoi provare con un tuo video, attenzione a non caricare file troppo grandi, altrimenti dovrai aspettare un bel po' per ottenere il risultato! Considera che un video di 3MB richiede un paio di minuti di calcolo.
 
 - Carica il file video (`.mp4`) su Colab.
-- Esegui il comando seguente per ottenere il video di risultato:
+- Esegui il comando seguente, in un **nuovo blocco di codice**, per ottenere il video di risultato:
 
 ```py
 # potrebbe richiedere qualche minuto
