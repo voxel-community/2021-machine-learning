@@ -10,7 +10,7 @@ Sperimenta cosa possono fare le reti con applicazioni più elaborate.
 
 L'esempio che abbiamo svolto (🐶/🐱) rappresenta un'applicazione piuttosto semplice. Naturalmente, le reti possono apprendere compiti molto più complessi. Come abbiamo visto, reti molto elaborate richiedono lunghi tempi di addestramento. 
 
-Per questo motive, andremo ad usare delle reti già pronte ed addestrate, che si possono trovare online. Dato che l'addestramento è già stato fatto, non abbiamo nemmeno bisogno di scaricare un dataset.
+Per questo motivo, andremo ad usare delle reti già pronte ed addestrate, che si possono trovare online. Dato che l'addestramento è già stato fatto, non abbiamo nemmeno bisogno di scaricare un dataset.
 
 In questo primo esempio, usiamo la rete chiamata **YOLO**. Si tratta di un *object detector*, ovvero una rete che, data un'immagine o un video, individua gli oggetti presenti e traccia una cornice rettangolare (=bounding box) intorno ad essi. YOLO è addestrata per individuare oggetti di 80 classi diverse.
 
@@ -21,7 +21,7 @@ In questo primo esempio, usiamo la rete chiamata **YOLO**. Si tratta di un *obje
 
 La rete neurale si trova in un repository su GitHub. Useremo la versione n.3 di YOLO.
 
-- In un nuovo notebook di Colab, crea una cella di codice ed esegui questo codice per scaricare la rete ed installare i pacchetti necessari:
+- In un **nuovo notebook di Colab**, crea una cella di codice ed esegui questo codice per scaricare la rete ed installare i pacchetti necessari:
 
 ```py
 !git clone https://github.com/ultralytics/yolov3

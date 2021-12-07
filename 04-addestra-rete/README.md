@@ -30,7 +30,7 @@ Il training di una rete comporta regolare diversi parametri. Ce ne sono due in p
 
 Anche in questo caso è dunque importante trovare una via di mezzo. Nel nostro caso useremo una velocità di apprendimento (***learning rate***) uguale a 0.001, e faremo durare l'addestramento per 8 epoche.
 
-Copia il comando in un nuovo blocco di codice
+Copia il comando in un **nuovo blocco di codice**
 
 ```py
 LRATE   = 0.001

@@ -16,7 +16,7 @@ La cosa diventa divertente quando l'immagine da cui estraiamo lo stile è un qua
 
 ### 1. Importa i moduli e la rete
 
-- Inizia un nuovo notebook su Colab, e importa i moduli python che ci servono:
+- Inizia un **nuovo notebook su Colab**, e importa i moduli python che ci servono:
 
 ```py
 import os

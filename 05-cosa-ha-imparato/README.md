@@ -23,6 +23,7 @@ Per comodità creiamoci una funzione che ci permetta di testare la risposta dell
 - da in pasto l'immagine alla rete neurale,
 - stampa la risposta.
 
+Copia i comandi in un **nuovo blocco di codice**
 
 ```py
 import numpy as np				# modulo python per gestire strutture numeriche

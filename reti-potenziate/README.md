@@ -4,7 +4,7 @@ Ora che hai avuto un assaggio del mondo del machine learning e creato in una ser
 
 L'esempio che abbiamo svolto (🐶/🐱) rappresenta un'applicazione piuttosto semplice. Naturalmente, le reti possono apprendere compiti molto più complessi. Come abbiamo visto, reti molto elaborate richiedono lunghi tempi di addestramento. 
 
-Per questo motive, andremo ad usare delle reti già pronte ed addestrate, che si possono trovare online. Dato che l'addestramento è già stato fatto, non abbiamo nemmeno bisogno di scaricare un dataset.
+Per questo motivo, andremo ad usare delle reti già pronte ed addestrate, che si possono trovare online. Dato che l'addestramento è già stato fatto, non abbiamo nemmeno bisogno di scaricare un dataset.
 
 Quelli che vogliamo proporti sono:
 
