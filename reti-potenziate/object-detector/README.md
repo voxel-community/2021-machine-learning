@@ -21,7 +21,7 @@ In questo primo esempio, usiamo la rete chiamata **YOLO**. Si tratta di un *obje
 
 La rete neurale si trova in un repository su GitHub. Useremo la versione n.3 di YOLO.
 
-- In un **nuovo notebook di Colab**, crea una cella di codice ed esegui questo codice per scaricare la rete ed installare i pacchetti necessari:
+- In un **nuovo notebook di Colab (Nuovo blocco note)**, crea una cella di codice ed esegui questo codice per scaricare la rete ed installare i pacchetti necessari:
 
 ```py
 !git clone https://github.com/ultralytics/yolov3
