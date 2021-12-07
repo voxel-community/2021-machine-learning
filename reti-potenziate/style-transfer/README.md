@@ -127,7 +127,7 @@ style_images        = { k: tf.nn.avg_pool(style_image, ksize=[3,3], strides=[1,1
 ### 4. Prova la rete!
 
 - Scegli dall'elenco quale immagini usare come "contenuto" e "stile", proviamo con Obama e un quadro di Picasso
-- Esegui il comando seguente, in un **nuovo blocco di codice**, per ottenere il risultato:
+- Esegui il comando seguente, in un **nuovo blocco di codice**
 
 ```py
 content = 'obama'                       # <=== modifica l'immagine di partenza
@@ -146,7 +146,7 @@ show_n( [ c_img, s_img, res], titles=['Immagine di partenza', 'Stile', 'Risultat
 <kbd>![obama](../../assets/07-obama.png)</kbd>
 
 Forte, no? 🤩 Riproviamo con la foto di Minou e un quadro di Munch.
-- Esegui il comando seguente, in un **nuovo blocco di codice**, per ottenere il risultato:
+- Esegui il comando seguente, in un **nuovo blocco di codice**
 
 ```py
 content = 'minou'                       # <=== modifica l'immagine di partenza
